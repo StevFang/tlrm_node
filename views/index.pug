@@ -1,5 +1,17 @@
-extends layout
+doctype html
+html
+  head
+    title=title
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/bootstrap-table.min.css')
+    link(rel='stylesheet', href='/css/font-awesome.min.css')
 
-block content
-  h1= title
-  p Welcome to #{title}
+    script(src='/js/plugins/jquery-3.3.1.min.js')
+    script(src='/js/plugins/bootstrap.min.js')
+    script(src='/js/plugins/bootstrap-table.min.js')
+    script(src='/js/plugins/bootstrap-table-zh-CN.min.js')
+
+  body
+    div(class='container')
+      table(id='myTable' class='table table-hover')
+    script(src='/js/index/table.js')
